@@ -1,0 +1,657 @@
+<!-- Exercise 1: HTML5 Base Template -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Event Portal</title>
+</head>
+
+<body>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Events</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Section -->
+    <main>
+        <h1>Welcome to Community Event Portal</h1>
+        <p>This portal helps residents register for events.</p>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2026 Community Event Portal</p>
+    </footer>
+
+</body>
+</html>
+
+<!-- Exercise 2: Navigation and Linking -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Example</title>
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+
+        <!-- External Link -->
+        <a href="help.html" target="_blank">Help</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Home Section</h2>
+        <p>Welcome to the homepage.</p>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+        <h2>Events Section</h2>
+        <p>Information about upcoming events.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Section</h2>
+        <p>Email: contact@example.com</p>
+    </section>
+
+</body>
+</html>
+
+<!-- Exercise 3: Welcome Banner with Styling -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Banner</title>
+
+    <style>
+
+        /* Styling for banner using ID */
+        #welcomeBanner {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Styling using class */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Welcome Banner -->
+    <div id="welcomeBanner">
+
+        <h1>Welcome User!</h1>
+
+        <p class="highlight">
+            Enjoy our community services.
+        </p>
+
+        <p>
+            Special Offer:
+            <span style="color:red; font-weight:bold;">
+                Free Event Registration!
+            </span>
+        </p>
+
+    </div>
+
+</body>
+</html>
+
+<!-- Exercise 4: Image Gallery -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+
+    <style>
+
+        /* Image Styling */
+        .event-image {
+            width: 200px;
+            height: 150px;
+            border: 3px solid black;
+        }
+
+        table {
+            margin: 20px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Community Event Gallery</h2>
+
+    <!-- Table Layout -->
+    <table border="1">
+
+        <!-- Row 1 -->
+        <tr>
+
+            <td>
+                <img src="https://via.placeholder.com/200"
+                     alt="Music Event"
+                     title="Music Festival"
+                     class="event-image">
+
+                <p>Music Festival</p>
+            </td>
+
+            <td>
+                <img src="https://via.placeholder.com/200"
+                     alt="Sports Event"
+                     title="Sports Meet"
+                     class="event-image">
+
+                <p>Sports Meet</p>
+            </td>
+
+            <td>
+                <img src="https://via.placeholder.com/200"
+                     alt="Art Event"
+                     title="Art Exhibition"
+                     class="event-image">
+
+                <p>Art Exhibition</p>
+            </td>
+
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+
+            <td>
+                <img src="https://via.placeholder.com/200"
+                     alt="Food Festival"
+                     title="Food Festival"
+                     class="event-image">
+
+                <p>Food Festival</p>
+            </td>
+
+            <td>
+                <img src="https://via.placeholder.com/200"
+                     alt="Workshop"
+                     title="Workshop"
+                     class="event-image">
+
+                <p>Workshop</p>
+            </td>
+
+            <td>
+                <img src="https://via.placeholder.com/200"
+                     alt="Dance Event"
+                     title="Dance Event"
+                     class="event-image">
+
+                <p>Dance Show</p>
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+</html>
+
+<!-- Exercise 5: Event Registration Form -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+
+    <style>
+
+        form {
+            width: 400px;
+            padding: 20px;
+            background-color: lightgray;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+
+    </style>
+
+    <script>
+
+        // Function to show confirmation
+        function showMessage() {
+
+            document.getElementById("result").value =
+                "Registration Successful!";
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Event Registration Form</h2>
+
+    <form>
+
+        <!-- Name -->
+        <input type="text"
+               placeholder="Enter your name"
+               required
+               autofocus>
+
+        <!-- Email -->
+        <input type="email"
+               placeholder="Enter your email"
+               required>
+
+        <!-- Date -->
+        <input type="date" required>
+
+        <!-- Event Type -->
+        <select required>
+
+            <option>Select Event</option>
+            <option>Music</option>
+            <option>Sports</option>
+
+        </select>
+
+        <!-- Message -->
+        <textarea placeholder="Enter message"></textarea>
+
+        <!-- Submit Button -->
+        <button type="button" onclick="showMessage()">
+            Submit
+        </button>
+
+        <br><br>
+
+        <!-- Output Message -->
+        <output id="result"></output>
+
+    </form>
+
+</body>
+</html>
+
+<!-- Exercise 6: Event Handling -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event Handling</title>
+
+    <script>
+
+        // Validate phone number
+        function validatePhone() {
+
+            let phone =
+                document.getElementById("phone").value;
+
+            if (phone.length != 10) {
+
+                alert("Invalid Phone Number");
+
+            }
+
+        }
+
+        // Display event fee
+        function showFee() {
+
+            let event =
+                document.getElementById("eventType").value;
+
+            document.getElementById("fee").innerHTML =
+                "Selected Event: " + event;
+
+        }
+
+        // Submit confirmation
+        function submitForm() {
+
+            alert("Feedback Submitted!");
+
+        }
+
+        // Enlarge image
+        function enlarge(img) {
+
+            img.style.width = "300px";
+
+        }
+
+        // Count characters
+        function countChars() {
+
+            let text =
+                document.getElementById("feedback").value;
+
+            document.getElementById("count").innerHTML =
+                "Characters: " + text.length;
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Phone Number -->
+    <input type="text"
+           id="phone"
+           placeholder="Enter phone number"
+           onblur="validatePhone()">
+
+    <br><br>
+
+    <!-- Dropdown -->
+    <select id="eventType"
+            onchange="showFee()">
+
+        <option>Music</option>
+        <option>Sports</option>
+
+    </select>
+
+    <p id="fee"></p>
+
+    <!-- Submit Button -->
+    <button onclick="submitForm()">
+        Submit
+    </button>
+
+    <br><br>
+
+    <!-- Double Click Image -->
+    <img src="https://via.placeholder.com/200"
+         ondblclick="enlarge(this)">
+
+    <br><br>
+
+    <!-- Feedback -->
+    <textarea id="feedback"
+              onkeyup="countChars()"></textarea>
+
+    <p id="count">Characters: 0</p>
+
+</body>
+</html>
+
+<!-- Exercise 7: Video Invite -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Video Invite</title>
+
+    <script>
+
+        // Video ready message
+        function videoReady() {
+
+            document.getElementById("message").innerHTML =
+                "Video ready to play";
+
+        }
+
+        // Warn before leaving page
+        window.onbeforeunload = function () {
+
+            return "Are you sure you want to leave?";
+
+        };
+
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Promo Video</h2>
+
+    <!-- Video Element -->
+    <video width="400"
+           controls
+           oncanplay="videoReady()">
+
+        <source src="sample.mp4" type="video/mp4">
+
+    </video>
+
+    <p id="message"></p>
+
+</body>
+</html>
+
+<!-- Exercise 8: Local Storage -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Local Storage</title>
+
+    <script>
+
+        // Save selected event
+        function savePreference() {
+
+            let event =
+                document.getElementById("event").value;
+
+            localStorage.setItem("preferredEvent", event);
+
+        }
+
+        // Load saved event
+        function loadPreference() {
+
+            let saved =
+                localStorage.getItem("preferredEvent");
+
+            if (saved) {
+
+                document.getElementById("event").value =
+                    saved;
+
+            }
+
+        }
+
+        // Clear storage
+        function clearData() {
+
+            localStorage.clear();
+            sessionStorage.clear();
+
+            alert("Preferences Cleared");
+
+        }
+
+        window.onload = loadPreference;
+
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Select Event</h2>
+
+    <!-- Dropdown -->
+    <select id="event" onchange="savePreference()">
+
+        <option>Music</option>
+        <option>Sports</option>
+        <option>Workshop</option>
+
+    </select>
+
+    <br><br>
+
+    <!-- Clear Button -->
+    <button onclick="clearData()">
+        Clear Preferences
+    </button>
+
+</body>
+</html>
+
+<!-- Exercise 9: Geolocation -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Geolocation</title>
+
+    <script>
+
+        // Find user location
+        function findLocation() {
+
+            navigator.geolocation.getCurrentPosition(
+                showPosition,
+                showError,
+                {
+                    enableHighAccuracy: true,
+                    timeout: 5000
+                }
+            );
+
+        }
+
+        // Display coordinates
+        function showPosition(position) {
+
+            document.getElementById("location").innerHTML =
+                "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+
+        }
+
+        // Error handling
+        function showError(error) {
+
+            alert("Error getting location");
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Nearby Events</h2>
+
+    <!-- Button -->
+    <button onclick="findLocation()">
+        Find Nearby Events
+    </button>
+
+    <!-- Location Output -->
+    <p id="location"></p>
+
+</body>
+</html>
+
+
+<!-- Exercise 10: Debugging Example -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Debugging Example</title>
+
+    <script>
+
+        // Sample variables
+        let a = 10;
+        let b = 20;
+
+        // Add numbers
+        let result = a + b;
+
+        // Print result in console
+        console.log("Result is:", result);
+
+        // Function for testing
+        function testDebug() {
+
+            let message = "Debugging in Chrome DevTools";
+
+            console.log(message);
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Debugging Practice</h2>
+
+    <button onclick="testDebug()">
+        Click Me
+    </button>
+
+</body>
+</html>
